@@ -19,7 +19,9 @@ const CONTACTS = [
     icon: MessageCircle,
     title: "WhatsApp · +91 99531 75709",
     sub: "Fastest way to reach the team",
-    href: waLink("Hi Mansi, I'd like to know more."),
+    href: waLink(
+      "Hi Mansi, I'd like to know more about your nutrition programme and how it works.",
+    ),
     testid: "contact-whatsapp",
   },
   {

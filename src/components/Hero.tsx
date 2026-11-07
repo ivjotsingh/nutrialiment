@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, ArrowDown, TrendingDown } from "lucide-react";
+import { ArrowRight, ArrowDown } from "lucide-react";
 import { MaskedLines } from "./Reveal";
 import { BOOK_LINK } from "../lib/constants";
 
@@ -153,32 +153,6 @@ export default function Hero() {
                 </ul>
               </motion.div>
 
-              {/* Weight chip */}
-              <motion.div
-                initial={
-                  shouldReduceMotion
-                    ? false
-                    : { opacity: 0, y: -16, scale: 0.94 }
-                }
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.8, delay: 1.2, ease: EASE }}
-                data-testid="hero-weight-chip"
-                className="animate-floaty absolute right-[-8px] top-2 flex scale-[0.85] items-center gap-3 rounded-full bg-paper py-2.5 pl-2.5 pr-5 shadow-[0_18px_44px_-14px_rgba(29,44,26,0.28)] sm:right-[-28px] sm:top-8 sm:scale-100 sm:gap-3.5 sm:py-3 sm:pl-3 sm:pr-6 lg:right-[-34px]"
-              >
-                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-sagebg text-moss">
-                  <TrendingDown size={19} strokeWidth={1.8} />
-                </span>
-                <span>
-                  <span className="block text-[20px] font-bold leading-none text-ink">
-                    6.3 kg
-                  </span>
-                  <span className="mt-1.5 block text-[11px] leading-[1.35] text-faint">
-                    avg. weight reduction
-                    <br />
-                    in 90 days
-                  </span>
-                </span>
-              </motion.div>
             </div>
           </div>
         </div>

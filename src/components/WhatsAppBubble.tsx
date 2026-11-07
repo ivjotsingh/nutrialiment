@@ -4,7 +4,9 @@ import { X } from "lucide-react";
 import { waLink } from "../lib/constants";
 
 const SESSION_KEY = "nutrialiment_mansi_chat_prompt_shown";
-const CHAT_LINK = waLink("Hi Mansi, I'd like to know more.");
+const CHAT_LINK = waLink(
+  "Hi Mansi, I'd like to know more about your nutrition programme and how it works.",
+);
 
 export default function WhatsAppBubble() {
   const [open, setOpen] = useState(false);

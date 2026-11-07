@@ -80,7 +80,9 @@ export default function Footer() {
             <ul className="mt-5 space-y-3">
               <li>
                 <a
-                  href={waLink("Hi Mansi, I'd like to know more.")}
+                  href={waLink(
+                    "Hi Mansi, I'd like to know more about your nutrition programme and how it works.",
+                  )}
                   data-testid="footer-whatsapp-link"
                   target="_blank"
                   rel="noopener noreferrer"
