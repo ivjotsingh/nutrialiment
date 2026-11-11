@@ -5,7 +5,7 @@ import { BOOK_LINK } from "../lib/constants";
 
 const QUALIFICATIONS = [
   "Bachelor's degree in Food, Nutrition & Dietetics, IHM, Delhi University",
-  "Postgraduate in Dietetics, Food & Nutrition, Institute of Hotel Management, PUSA",
+  "Postgraduate in Dietetics, Food & Nutrition, IHM, PUSA",
   "ACE Fitness and Sports Nutrition certification",
   "Certified Supplement Strategist",
   "TTC Yoga, certified by Yoga Alliance USA",
@@ -16,7 +16,7 @@ const ASSOCIATIONS = [
   { img: "/assets/logo-qua.png", alt: "QUA Nutrition", sub: "Senior Nutritionist" },
   { img: "/assets/logo-fitnessfirst.svg", alt: "Fitness First", sub: "Sports Nutrition" },
   { img: null, alt: "IHM PUSA — New Delhi", sub: "Postgraduate, Dietetics", textMark: true },
-  { img: "/assets/logo-ace.svg", alt: "American Council on Exercise", sub: "Certified, Sports Nutrition" },
+  { img: "/assets/logo-ace.png", alt: "ACE logo", sub: "ACE USA Certified, Sports Nutrition" },
   { img: "/assets/logo-yogaalliance.png", alt: "Yoga Alliance", sub: "TTC Yoga Certified" },
 ];
 
@@ -48,25 +48,6 @@ export default function WhyMansi() {
                 <br />
                 <span className="italic text-moss">Care built around you.</span>
               </p>
-            </Reveal>
-
-            <Reveal delay={0.12}>
-              <div className="mt-12 grid grid-cols-3 divide-x divide-forest/10 border-y border-forest/10">
-                {[
-                  ["8+", "Years in nutrition"],
-                  ["1,500+", "Clients guided"],
-                  ["5", "Specialist credentials"],
-                ].map(([num, label]) => (
-                  <div key={label} className="px-4 py-7 text-center first:pl-0 last:pr-0">
-                    <p className="font-serif text-[32px] font-light leading-none text-ink">
-                      {num}
-                    </p>
-                    <p className="mt-2.5 text-[11px] font-semibold uppercase leading-[1.5] tracking-[0.14em] text-faint">
-                      {label}
-                    </p>
-                  </div>
-                ))}
-              </div>
             </Reveal>
 
             <Reveal delay={0.2}>
@@ -132,7 +113,6 @@ export default function WhyMansi() {
             </Reveal>
 
             <Reveal delay={0.26}>
-              <p className="eyebrow mt-14 text-faint">Why this experience matters</p>
               <h3 className="mt-6 font-serif text-[34px] font-light leading-[1.25] text-ink sm:text-[38px]">
                 Clinical knowledge, applied to{" "}
                 <span className="italic text-moss">your everyday life.</span>

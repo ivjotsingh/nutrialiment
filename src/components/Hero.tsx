@@ -19,10 +19,10 @@ export default function Hero() {
     <section
       id="top"
       data-testid="hero-section"
-      className="relative overflow-hidden bg-cream pt-[84px]"
+      className="relative overflow-hidden bg-cream pt-[124px]"
     >
       <div className="mx-auto max-w-[1500px] px-6 lg:px-14">
-        <div className="grid grid-cols-1 items-center gap-10 pb-14 pt-10 lg:min-h-[calc(100vh-84px)] lg:grid-cols-12 lg:gap-0 lg:pb-16 lg:pt-8">
+        <div className="grid grid-cols-1 items-center gap-10 pb-14 pt-10 lg:min-h-[calc(100vh-124px)] lg:grid-cols-12 lg:gap-0 lg:pb-16 lg:pt-8">
           {/* Left column */}
           <div className="relative z-10 lg:col-span-6">
             <motion.p

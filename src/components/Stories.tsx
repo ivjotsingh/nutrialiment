@@ -108,14 +108,7 @@ export default function Stories() {
           </Reveal>
         </div>
 
-        <Reveal delay={0.1} className="mt-24">
-          <p className="eyebrow text-sage">More client experiences</p>
-          <h3 className="mt-6 font-serif text-[36px] font-light text-cream sm:text-[44px]">
-            More stories. <span className="italic text-sage">Real progress.</span>
-          </h3>
-        </Reveal>
-
-        <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <div className="mt-24 grid grid-cols-1 gap-6 lg:grid-cols-2">
           {MORE.map((t, i) => (
             <Reveal key={t.name} delay={0.08 * i}>
               <QuoteCard {...t} testid={`story-more-card-${i}`} />

@@ -25,12 +25,12 @@ export default function App() {
         <Navbar />
         <main id="main-content">
           <Hero />
+          <WhyMansi />
           <About />
+          <Stories />
           <Services />
           <Process />
           <Included />
-          <WhyMansi />
-          <Stories />
           <Booking />
           <Contact />
         </main>

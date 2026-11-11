@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 import { ArrowUpRight, ChevronDown, Instagram, Mail, MessageCircle, Phone } from "lucide-react";
 import { Reveal } from "./Reveal";
-import { waLink, INSTAGRAM_URL, EMAIL_URL } from "../lib/constants";
+import { waLink, INSTAGRAM_URL, EMAIL_ADDRESS, EMAIL_URL } from "../lib/constants";
 
 const GOALS = [
   "Weight management",
@@ -33,7 +33,7 @@ const CONTACTS = [
   },
   {
     icon: Mail,
-    title: "hello@nutrialiment.in",
+    title: EMAIL_ADDRESS,
     sub: "Open a new email to Mansi",
     href: EMAIL_URL,
     testid: "contact-email",

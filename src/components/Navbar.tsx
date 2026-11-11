@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, Mail, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { Logo } from "./Logo";
-import { waLink } from "../lib/constants";
+import { EMAIL_ADDRESS, EMAIL_URL, PHONE_URL, waLink } from "../lib/constants";
 
 const WHATSAPP_BOOK = waLink("Hi Mansi, I'd like to book a free consultation.");
+const WHATSAPP_URL = waLink("Hi Mansi, I'd like to know more about your nutrition programme.");
 
 const LINKS = [
   { label: "Where we help", href: "#where-we-help" },
@@ -47,6 +48,39 @@ export default function Navbar() {
           : "bg-cream/95"
       }`}
     >
+      <div
+        data-testid="contact-banner"
+        className="border-b border-cream/10 bg-forest text-cream"
+      >
+        <div className="mx-auto flex min-h-10 max-w-[1480px] flex-wrap items-center justify-center gap-x-7 gap-y-1 px-4 py-2 text-[11px] font-medium tracking-[0.01em] sm:text-[12px] lg:justify-between lg:px-12">
+          <a
+            href={PHONE_URL}
+            data-testid="banner-phone-link"
+            className="inline-flex items-center gap-2 text-cream/85 transition-colors hover:text-cream"
+          >
+            <Phone size={13} className="text-sage" />
+            +91 99531 75709
+          </a>
+          <a
+            href={WHATSAPP_URL}
+            data-testid="banner-whatsapp-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-cream/85 transition-colors hover:text-cream"
+          >
+            <MessageCircle size={14} className="text-sage" />
+            WhatsApp
+          </a>
+          <a
+            href={EMAIL_URL}
+            data-testid="banner-email-link"
+            className="inline-flex items-center gap-2 text-cream/85 transition-colors hover:text-cream"
+          >
+            <Mail size={14} className="text-sage" />
+            {EMAIL_ADDRESS}
+          </a>
+        </div>
+      </div>
       <div className="mx-auto flex h-[84px] max-w-[1480px] items-center justify-between px-6 lg:px-12">
         <Logo testid="navbar-brand-logo" />
 

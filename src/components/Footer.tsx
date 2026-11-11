@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Logo } from "./Logo";
-import { waLink, INSTAGRAM_URL, EMAIL_URL, WHATSAPP_NUMBER } from "../lib/constants";
+import { waLink, INSTAGRAM_URL, EMAIL_ADDRESS, EMAIL_URL } from "../lib/constants";
 
 const NAV = [
   { label: "Where we help", href: "#where-we-help" },
@@ -110,7 +110,7 @@ export default function Footer() {
                   data-testid="footer-email-link"
                   className="group inline-flex items-center gap-2 text-[15px] text-cream/70 transition-colors hover:text-cream"
                 >
-                  hello@nutrialiment.in
+                  {EMAIL_ADDRESS}
                   <ArrowUpRight size={14} className="opacity-50 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                 </a>
               </li>
